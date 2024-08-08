@@ -1,0 +1,330 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content:flex-end;
+    margin: 10px;
+    height: 3vh;
+    gap: 20px;
+    align-items: flex-end;
+    font-weight: 900;
+    padding-right: 20px;
+}
+
+.fa-bars{
+    font-size: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    color: #ff6464;
+}
+
+.resume {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.resume .resume-right img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.resume .resume-left{
+    width: 600px;
+    margin-top: 30px;
+}
+
+.resume .resume-left h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+
+.resume .resume-left p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.resume .resume-left button {
+    font-size: 15px;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-radius: 2px;
+    border: 0px;
+    background-color: #ff6464;
+    color: white;
+}
+
+.recent-posts{
+    background-color: #edf7fa;
+}
+
+.recent-posts .head{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.recent-posts .head .posts{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.recent-posts .head .view{
+    color: #00a8cc;
+    font-weight: 700;
+}
+
+.recent-posts .content-card{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.recent-posts .content-card .card{
+    background-color: white;
+    margin-bottom: 20px;
+    height: 220px;
+    width: 400px;
+    box-shadow: 5px 5px 1px  rgba(192, 192, 192, 0.1);
+    border-radius: 2px;
+}
+
+.recent-posts .content-card .card h1{
+    margin: 15px;
+    font-size: 25px;
+}
+
+.recent-posts .content-card .card p span{
+    margin: 15px;
+    font-size: 18px;
+}
+
+.recent-posts .content-card .card p{
+    margin: 15px;
+    font-size: 18px;
+}
+
+.recent-posts .content-card .card .content{
+    font-size: 15px;
+}
+
+.featured-works .featured-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-works .head{
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 190px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.featured-works .featured-card .card{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 10px;
+}
+
+.featured-works .featured-card .card img{
+    width: 246px;
+    height: 184px;
+    border-radius: 5px;
+}
+
+.featured-works .featured-card .card .card-info .head{
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.featured-works .featured-card .card .card-info p {
+    margin-bottom: 20px;
+}
+
+.featured-works .featured-card .card .card-info p .year{
+    background-color: #142850;
+    color: white;
+    border-radius: 30px;
+    padding: 2px;
+    padding-inline: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.featured-works .featured-card .card .card-info p:nth-child(2){
+    color: #8695a4;
+}
+
+.featured-works .featured-card .card .card-info .content{
+    margin-left: 10px;
+    width: 50%;
+}
+
+.featured-works .featured-card hr{
+    width: 80%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+footer .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
+}
+
+i{
+    font-size: 30px; 
+}
+
+footer p {
+    text-align: center;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog h1{
+    align-items: flex-start;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.blog .card{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px;
+}
+
+.blog .card h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.blog .card p span:nth-child(1){
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.blog .card p span:nth-child(2){
+    font-size: 20px;
+    margin-left: 10px;
+    color: #8695a4;
+}
+
+.blog .card .content{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.blog hr{
+    width: 80%;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    a{
+        display: none;
+    }
+
+    .fa-bars{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+        font-size: 22px;
+    }
+
+    .resume{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .resume .resume-left{
+        width: 100%;
+    }
+
+    .recent-posts .view{
+        display: none;
+    }
+
+    .recent-posts .content-card{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .recent-posts .content-card .card{
+        width: 80%;
+        align-items: center;
+    }
+
+    .recent-posts .content-card .card p{
+        width: 100%;
+    }
+
+    .featured-works .featured-card .card{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .featured-works .featured-card .card img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .featured-works .featured-card .card .card-info .content{
+        width: 100%;
+    }
+
+    .featured-works .head{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .blog{
+        width: 100%;
+    }
+
+    .blog .card{
+        width: 100%;
+    }
+}
